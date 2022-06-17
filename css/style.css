@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Trispace:wght@300&display=swap");
+:root {
+  --color1:black
+  --color2:white
+  --color3:#6BBAEC ;
+}
+
+*, ::after, ::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fugaz One", cursive;
+  font-family: "Trispace", sans-serif;
+  background: no-repeat;
+  background-attachment: fixed;
+  text-decoration: none;
+  color: var(--color2);
+  text-transform: uppercase;
+}
+body header .container {
+  float: left;
+  position: relative;
+  background-color: black;
+  width: 10vw;
+  height: 100vh;
+}
+body header .container .navigation ul li {
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background: var(--color2);
+}
+body header .container .navigation ul li #myImage {
+  border: 1px;
+  width: 5vw;
+}
+body header .container .navigation ul li a {
+  border: 1px solid white;
+  padding: 10px;
+  color: red;
+}
+body #main_principal {
+  width: 100vw;
+  height: 100vh;
+  background: url("/image/n°1_backround.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+}
+
+/*# sourceMappingURL=style.css.map */

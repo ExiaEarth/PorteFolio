@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Trispace:wght@300&display=swap');
+
+:root{
+    --color1:black
+    --color2:white
+    --color3:#6BBAEC
+}
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Fugaz One', cursive;
+    font-family: 'Trispace', sans-serif;
+    background: no-repeat;
+    background-attachment: fixed;
+    // retirer la décoration des lien
+    text-decoration: none;
+    // var qui met en les text en blanc
+    color: var(--color2);
+    // met text en majuscule
+    text-transform: uppercase;
+    header{
+        .container{
+            // permet de metre la nav à gauche
+            float: left;
+            position: relative;
+            // color
+            background-color: black;
+            // largeur
+            width: 10vw;
+            // hauteur
+            height: 100vh;
+            // opacity: 0.5;
+            .navigation{
+                ul{
+                    // border-bottom: 2px;
+                    // border-color: red;
+                    li{
+                        margin-top: 20px;
+                        margin-bottom: 2px;
+                        background: var(--color2);
+                        #myImage{
+                            border: 1px ;
+                            width: 5vw;
+                        }
+                        a{
+                            border: 1px solid white;
+                            padding: 10px;
+                            
+                            // color: var(--color3);
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main_principal{
+        // largeur
+        width: 100vw;
+        // hauteur
+        height: 100vh;
+        background: url("/image/n°1_backround.avif");
+        // taille de l'image
+        background-size: cover;
+        // le répétage
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        // centrage
+        background-position: center;
+    }
+}
+footer{
+    ul{
+        li{
+            p{
+                
+            }
+        }
+    }
+
+}
