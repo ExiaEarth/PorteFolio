@@ -18,6 +18,17 @@ body {
   background: no-repeat;
   background-attachment: fixed;
 }
+body .btn-rond-navig .cont-navig {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #100c0c;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #5c0101, #ffffff);
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
 body header .container {
   color: var(--color2);
   text-transform: uppercase;
@@ -28,6 +39,8 @@ body header .container {
   height: 100vh;
   min-height: 700px;
   position: fixed;
+  top: 0;
+  z-index: 5;
   transition: all 0.2s ease-in-out;
 }
 body header .container .navigation .profilImage span #myImage {
@@ -114,6 +127,9 @@ footer {
   text-align: center;
   background-color: var(--color1);
   color: var(--color3);
+}
+footer ul li p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
