@@ -13,16 +13,15 @@
 </head>
 <body>
 <!-- div -btn-mode-mini -->
-    <div class="btn-rond-navig">
+    <!-- <div class="btn-rond-navig">
         <div class="cont-navig">
             ::before
             ::after
         </div>
-    </div>
+    </div> -->
  <!-- debut de ma barre de navigation -->
     <header>
-        <div class="container">
-            <div class="navigation">
+        <div class="container" > 
                     <div class="profilImage">
                         <span>
                            <img id="myImage" src="image/myImage.png" alt="" srcset="">
@@ -46,12 +45,12 @@
                     </div>
                     <div class="menu">
                         <span class="nav-menu">
-                            <a href="#secProjDeFormation">projet de formation</a>
+                            <a href="#secProjetDeFormation">projet de formation</a>
                         </span>
                     </div>
                     <div class="menu">
                         <span class="nav-menu">
-                            <a href="#">5</a>
+                            <a href="#secContact">contact</a>
                         </span>
                     </div>
                     <div class="menu">
@@ -68,12 +67,14 @@
                             </a>
                         </span>
                     </div>
+        </div>
     </header>
     <!-- Section de page accueil -->
     <section id="secAccueil">
-        <h1>Bienvenu sur mon PorteFolio</h1>
-        <h4>Je m'appelle Marc Lemer</h4>
-        <h2>je suis dev web full stack et blabblabla</h2>
+        <h1>Soyez le bienvenu sur mon PorteFolio</h1>
+        <h2>Je m'appelle Marc Lemer</h2>
+        <h2 id="text2">et</h2>
+        <h2 id="text3">je vous souhaite une bonne visite.</h2>
         <div id="myImageAccueil">
             <!-- image N°2 -->
         </div>
@@ -118,42 +119,63 @@
         </div>
     </section>
     <!-- section page projet divers -->
-    <section id="secProjDeFormation">
-        <div class="container">
-            <div class="myProjet">
-                <ul>
-                    <li class="listeProjet">
-                        <figure>
-                            <img src="" alt="" srcset="">
-                        </figure>
-                    </li>
-                    <li class="listeProjet">
-                        <figure>
-                            <img src="" alt="" srcset="">
-                        </figure>
-                    </li>
-                    <li class="listeProjet">
-                        <figure>
-                            <img src="" alt="" srcset="">
-                        </figure>
-                    </li>
-                    <li class="listeProjet">
-                        <figure>
-                            <img src="" alt="" srcset="">
-                        </figure>
-                    </li>
-                    <li class="listeProjet">
-                        <figure>
-                            <img src="" alt="" srcset="">
-                        </figure>
-                    </li>
-                    <li class="listeProjet">
-                        <figure>
-                            <img src="" alt="" srcset="">
-                        </figure>
-                    </li>
-                </ul>
+    <section id="secProjetDeFormation">
+        <h2 id="titlePageProjet">Ici seras le titre de page.</h2>
+        <div class="contProjet">
+            <div class="divItem">
+                <img class="item" src="/image/projetn2.png" alt="">
+                <h3>text</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
             </div>
+            <div class="item">
+                <img src="/image/projetn2.png" alt="">
+                <h3>text</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item">
+                <img src="/image/projetn2.png" alt="">
+                <h3>text</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item">
+                <img src="/image/projetn2.png" alt="">
+                <h3>text</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item">
+                <img src="/image/projetn2.png" alt="">
+                <h3>text</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item">
+                <img src="/image/projetn2.png" alt="">
+                <h3>text</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+    <section id="secContact">
+        <h2>contact</h2>
+        <div class="contactCordo">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <label for="userFirstName">Prénom :</label>
+                <input type="text" name="userFirstName" id="userFirstName">
+
+                <label for="userLastName">Nom :</label>
+                <input type="text" name="userLastName" id="userLastName">
+
+                <label for="userMail">Votre adresse mail :</label>
+                <input type="mail" name="userMail" id="userMail">
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre message</legend>
+                <label for="userMsg">Entrez votre message ici :</label>
+                <input type="textarea" name="userMsg" id="userMsg">
+            </fieldset>
+
+            <input type="submit" value="Envoyer">
         </div>
     </section>
     <!-- zone du footter -->

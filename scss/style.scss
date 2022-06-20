@@ -49,12 +49,12 @@ body {
             // met text en majuscule
             text-transform: uppercase;
             // permet de metre la nav à gauche
-            float: left;
-            position: relative;
+            // float: left;
+            // position: relative;
             // color
             background-color: var(--color2);
             // largeur
-            width: 300px;
+            width: 15vw;
             // hauteur
             height: 100vh;
             // hauteur minimal
@@ -64,26 +64,32 @@ body {
             // border-right: 1px solide var(--color3);
              z-index: 5;
             transition: all .2s ease-in-out;
-            .navigation{
                 .profilImage{
                     span{
                         #myImage{
                             border: 1px ;
                             width: 5vw;
+                            display: flex;
+                        }
+                        .lienExt{
+                            display: flex;
+                            width: auto;
+                            height: auto;
                         }
                     }
                 }
                 .menu{
                     .nav-menu{
-                        font-size: 19px;
-                        font-weight: 700;
-                        // la forme du curseur
-                        cursor: pointer;
-                        width: 100%;
-                        height: 10%;
+                        border-spacing: 1 50vh;
+                        // taille de la police d'écriture
+                        font-size: 1.2em;
+                        // épaisseur de police d'écriture
+                        font-weight: bold;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        border:1px solid #0f6c06;
+                        margin-top: 10px;
                         a{
                             text-decoration: none;
                             color:var(--color3);
@@ -99,7 +105,6 @@ body {
                         }
                     }
                 }
-            }
         }
     }       
     #secAccueil{
@@ -115,32 +120,45 @@ body {
         min-height: 100vh;
         // centrage
         background-position: center;
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0 30px 0 30px;
-            padding-top: 100px;
-            text-align: center;
-        }
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+                // padding-top: 100px;
+                text-align: center;
+                color: #ffff00;
+                // position: relative;
+                font-size: 0px; font-size: 2rem;
+            }
         h2{
-            text-align: center;
+            position: relative;
+            // position depuis le bord haut
+            top: 12rem;
+            margin-bottom:1em ;
+            color:var(--color1);
+            text-indent: 20rem;
+            font-size: 2px; font-size: 2rem;
             
         }
-        h4{
-            text-align: center;
+        #text2{
+            top: 15rem;
+            left: 44rem;
+        }
+        #text3{
+            top: 40rem;
+            left: 57rem;
         }
         // #myImageAccueil{
         //     text-align: center;
         //     display: block;
-        //     border: 1px solid red;
+        //     position: relative;
+        //     top: 15rem;
+        //     //  redimensionnée pour être aussi grande que possible et pour conserver ses proportions.
         //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     background-position: right;
+        //     background-position: center;
         //     background: url("/image/image_accueil2.jpg");
-        //     height: 50vh;
-        //     width: 50vw;
+        //     height: 40vh;
+        //     width: 40vw;
         //     margin-left: auto;
-        //     margin-right: auto;
-            
+        //     padding-right: auto;
         // }
     }
     #secPresentation{
@@ -177,8 +195,10 @@ body {
         // hauteur
         height: 100vh;
         .cvText{
+            text-align: center;
             .textCV{
                 text-align: center;
+            //  cv
             }
         }
         .cvPlacement{
@@ -187,15 +207,51 @@ body {
             }
         }
     }
-    #secProjDeFormation{
-        background: rgba($color: #b4ab03, $alpha: 1.0);
+    #secProjetDeFormation{
+        background: rgba($color: #717170, $alpha: 1.0);
         text-align: center;
         // largeur
         width: 100vw;
         // hauteur
         height: 100vh;
+        #titlePageProjet{
+            text-align: center;
+        }
+        .contProjet{
+            width: 100vw;
+            height: 100vh;
+            // l'espace nécessaire à la gauche
+            padding-left: 15rem;
+            display: flex;
+            // affichés sur plusieurs lignes avec un retour automatique
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .DivItem{
+                .item{
+                    margin: 10rem;
+                    width: 10rem;
+                    height: 20rem;
+                    background: #fff;
+                }
+            }
+        }
     }
-
+    #secContact{
+        background: rgba($color: #0c7c7c, $alpha: 1.0);
+        text-align: center;
+        // largeur
+        width: 100vw;
+        // hauteur
+        height: 100vh;
+        h2{
+            color: red;
+        }
+        .contactCordo{
+            text-align: center;
+            
+        }
+    }
 }
 footer{
     text-align: center;
