@@ -7,6 +7,8 @@
     --color1:black;
     --color2:white;
     --color3:#6BBAEC;
+    --color4:rgb(4, 3, 73);
+    --color5:rgb(105, 36, 36);
 }
 // reset scss
 *,::after,::before{
@@ -15,6 +17,7 @@
     box-sizing: border-box;
 }
 body {
+    align-items: center;
     font-family: 'Fugaz One', cursive;
     font-family: 'Trispace', sans-serif;
     // le repet de img
@@ -44,75 +47,73 @@ body {
     }
     header{
         .container{
-            // var qui met en les text en blanc
+            // opacity: 0;
             color: var(--color2);
             // met text en majuscule
             text-transform: uppercase;
-            // permet de metre la nav à gauche
-            // float: left;
-            // position: relative;
             // color
-            background-color: var(--color2);
+            background-color: var(--color4);
             // largeur
             width: 15vw;
             // hauteur
             height: 100vh;
-            // hauteur minimal
-            min-height: 700px;
             position: fixed;
-            top: 0;
-            // border-right: 1px solide var(--color3);
-             z-index: 5;
-            transition: all .2s ease-in-out;
-                .profilImage{
-                    span{
-                        #myImage{
+            //  z-index: 5;
+            // transition: all .2s ease-in-out;
+            .profilImage{
+                span{
+                    #myImage{
+                        width: 5vw;
+                    }
+                    // .lienExt{
+                    //     display: flex;
+                    //     width: auto;
+                    //     height: auto;
+                    // }
+                }
+            }
+            .menu{
+                height: 12vh;
+                width: 15vw;
+                .nav-menu{
+                    height: 12vh;
+                    width: 15vw;
+                    // border-spacing: 1 50vh;
+                    // taille de la police d'écriture
+                    font-size: 1.2em;
+                    // épaisseur de police d'écriture
+                    font-weight: bold;
+                    display: inline-block;
+                    justify-content: space-between;
+                    // align-items: center;
+                    border:1px solid #0f6c06;
+                    // margin-top: 10px;
+                    a{
+                        text-indent: 20%;
+                        height: 10vh;
+                        width: 5vw;
+                        text-decoration: none;
+                        color:var(--color3);
+                        border: 1px solid red;
+                        img{
+                            width: 10px;
+                        }
+                        img{
                             border: 1px ;
-                            width: 5vw;
-                            display: flex;
-                        }
-                        .lienExt{
-                            display: flex;
-                            width: auto;
-                            height: auto;
-                        }
+                            width: 3vw;
+                        }     
                     }
                 }
-                .menu{
-                    .nav-menu{
-                        border-spacing: 1 50vh;
-                        // taille de la police d'écriture
-                        font-size: 1.2em;
-                        // épaisseur de police d'écriture
-                        font-weight: bold;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border:1px solid #0f6c06;
-                        margin-top: 10px;
-                        a{
-                            text-decoration: none;
-                            color:var(--color3);
-                            // border: 1px solid red;
-                            img{
-                                width: 10px;
-                            }
-                            img{
-                                border: 1px ;
-                                width: 3vw;
-                            }
-                            
-                        }
-                    }
-                }
+            }
         }
     }       
     #secAccueil{
+
         // largeur
         width: 100vw;
         // hauteur
         height: 100vh;
-        background: url("/image/n°1_backround.avif");
+        background: url("/image/n°1_backround.jpg");
         // taille de l'image
         background-size: cover;
         // le répétage
@@ -120,31 +121,99 @@ body {
         min-height: 100vh;
         // centrage
         background-position: center;
-            h1{
-                font-family: Arial, Helvetica, sans-serif;
-                // padding-top: 100px;
-                text-align: center;
-                color: #ffff00;
-                // position: relative;
-                font-size: 0px; font-size: 2rem;
+        // h1 apparrait seulement sur mobil
+        h1{
+            opacity: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            // padding-top: 100px;
+            text-align: center;
+            color: #ffff00;
+            // position: relative;
+            font-size: 0px; font-size: 2rem;
+        }
+        .textBienvenu{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            .bienvenuAnimation{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5rem;
+                .letter{
+                    color: yellow;
+                }
             }
+        }
+        // #time{
+        //     position: fixed;
+        //     color:var(--color2);
+        //     // text-indent: 20rem;
+        //     font-size: 2px; font-size: 2rem;
+        //     float: right;
+
+        //     .cercle{
+        //         position: relative;
+        //         width: 150px;
+        //         height: 150px;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //         // placé sur le côté droit ou sur le côté gauche de son conteneur
+        //         float: left;
+        //         // border: 1px solid red;
+
+        //         #heurs{
+        //         color: white;
+        //         svg{
+        //             circle{
+        //                 width: 100%;
+        //                 height: 100%;
+        //                 fill: transparent;
+        //                 stroke: #191919;
+        //                 stroke-width: 4;
+        //                 transform: translate(5px);
+        //                 :nth-child(2){
+        //                     stroke: var(--color5);
+        //                 }
+        //             }
+        //         }
+        //         }
+        //         #minutes{
+        //         color: white;
+        //         }
+        //         #second{ 
+        //         text-align: center;
+        //         }
+        //         #amPm{ 
+        //         color: white;
+
+
+        //         }
+        //     }
+        // }
         h2{
             position: relative;
             // position depuis le bord haut
-            top: 12rem;
             margin-bottom:1em ;
-            color:var(--color1);
+            color:var(--color2);
+            top: 15rem;
             text-indent: 20rem;
             font-size: 2px; font-size: 2rem;
-            
+        }
+        #devName{
+            color: red;
         }
         #text2{
-            top: 15rem;
+            // top: 1rem;
             left: 44rem;
+            color: blue;
         }
         #text3{
             top: 40rem;
-            left: 57rem;
+            left: 29rem;
+            color: yellow;
         }
         // #myImageAccueil{
         //     text-align: center;
@@ -160,6 +229,19 @@ body {
         //     margin-left: auto;
         //     padding-right: auto;
         // }
+        .arrow{
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            /* transform: translateX(-100%); */
+            transform:translateY(1200%) ;
+            .icons-the-arrow{
+                font-size: 3rem;
+                opacity: 0;
+                color: var(--color2);
+            }
+        }
+        
     }
     #secPresentation{
         background: rgba($color: #0c7c7c, $alpha: 1.0);
@@ -173,7 +255,7 @@ body {
                 text-align: center;
             }
             .divTextPres{
-                textPres{
+                .textPres{
                     text-align: center;
                 }
                 .ulPresGauche{
@@ -208,49 +290,55 @@ body {
         }
     }
     #secProjetDeFormation{
-        background: rgba($color: #717170, $alpha: 1.0);
-        text-align: center;
+        background: rgba($color: #ffffff, $alpha: 1.0);
         // largeur
         width: 100vw;
         // hauteur
         height: 100vh;
+        // H2
         #titlePageProjet{
-            text-align: center;
+            position: relative;
+            // position depuis le bord haut
+            top: 2rem;
+            margin-bottom:1em ;
+            color:var(--color1);
+            text-indent: 20rem;
+            font-size: 2px; font-size: 2rem;
         }
         .contProjet{
-            width: 100vw;
-            height: 100vh;
-            // l'espace nécessaire à la gauche
-            padding-left: 15rem;
-            display: flex;
-            // affichés sur plusieurs lignes avec un retour automatique
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            .DivItem{
+            float: right;
+            height: 50vh;
+            .divItem{
+                align-items: center;
+                float: left;
                 .item{
-                    margin: 10rem;
-                    width: 10rem;
-                    height: 20rem;
-                    background: #fff;
+                    text-align: center;
+                    // float: right;
+                    display: flex;
+                    height: 90h;
+                    width: 10vw;
                 }
             }
         }
     }
     #secContact{
-        background: rgba($color: #0c7c7c, $alpha: 1.0);
-        text-align: center;
+        background: rgba($color: #4e4e4e, $alpha: 1.0);
         // largeur
         width: 100vw;
         // hauteur
         height: 100vh;
+        text-align: center;
+
         h2{
-            color: red;
         }
         .contactCordo{
-            text-align: center;
-            
+            fieldset{
+                legend{
+
+                }
+            }
         }
+
     }
 }
 footer{

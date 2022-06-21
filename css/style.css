@@ -4,6 +4,8 @@
   --color1:black;
   --color2:white;
   --color3:#6BBAEC;
+  --color4:rgb(4, 3, 73);
+  --color5:rgb(105, 36, 36);
 }
 
 *, ::after, ::before {
@@ -13,6 +15,7 @@
 }
 
 body {
+  align-items: center;
   font-family: "Fugaz One", cursive;
   font-family: "Trispace", sans-serif;
   background: no-repeat;
@@ -32,38 +35,34 @@ body .btn-rond-navig .cont-navig {
 body header .container {
   color: var(--color2);
   text-transform: uppercase;
-  background-color: var(--color2);
+  background-color: var(--color4);
   width: 15vw;
   height: 100vh;
-  min-height: 700px;
   position: fixed;
-  top: 0;
-  z-index: 5;
-  transition: all 0.2s ease-in-out;
 }
 body header .container .profilImage span #myImage {
-  border: 1px;
   width: 5vw;
-  display: flex;
 }
-body header .container .profilImage span .lienExt {
-  display: flex;
-  width: auto;
-  height: auto;
+body header .container .menu {
+  height: 12vh;
+  width: 15vw;
 }
 body header .container .menu .nav-menu {
-  border-spacing: 1 50vh;
+  height: 12vh;
+  width: 15vw;
   font-size: 1.2em;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  justify-content: space-between;
   border: 1px solid #0f6c06;
-  margin-top: 10px;
 }
 body header .container .menu .nav-menu a {
+  text-indent: 20%;
+  height: 10vh;
+  width: 5vw;
   text-decoration: none;
   color: var(--color3);
+  border: 1px solid red;
 }
 body header .container .menu .nav-menu a img {
   width: 10px;
@@ -75,35 +74,67 @@ body header .container .menu .nav-menu a img {
 body #secAccueil {
   width: 100vw;
   height: 100vh;
-  background: url("/image/n°1_backround.avif");
+  background: url("/image/n°1_backround.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
   background-position: center;
 }
 body #secAccueil h1 {
+  opacity: 0;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: #ffff00;
   font-size: 0px;
   font-size: 2rem;
 }
+body #secAccueil .textBienvenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #secAccueil .textBienvenu .bienvenuAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+body #secAccueil .textBienvenu .bienvenuAnimation .letter {
+  color: yellow;
+}
 body #secAccueil h2 {
   position: relative;
-  top: 12rem;
   margin-bottom: 1em;
-  color: var(--color1);
+  color: var(--color2);
+  top: 15rem;
   text-indent: 20rem;
   font-size: 2px;
   font-size: 2rem;
 }
+body #secAccueil #devName {
+  color: red;
+}
 body #secAccueil #text2 {
-  top: 15rem;
   left: 44rem;
+  color: blue;
 }
 body #secAccueil #text3 {
   top: 40rem;
-  left: 57rem;
+  left: 29rem;
+  color: yellow;
+}
+body #secAccueil .arrow {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  /* transform: translateX(-100%); */
+  transform: translateY(1200%);
+}
+body #secAccueil .arrow .icons-the-arrow {
+  font-size: 3rem;
+  opacity: 0;
+  color: var(--color2);
 }
 body #secPresentation {
   background: #0c7c7c;
@@ -114,7 +145,7 @@ body #secPresentation {
 body #secPresentation .artPres h3 {
   text-align: center;
 }
-body #secPresentation .artPres .divTextPres textPres {
+body #secPresentation .artPres .divTextPres .textPres {
   text-align: center;
 }
 body #secPresentation .artPres .divTextPres .ulPresGauche ul li {
@@ -136,42 +167,39 @@ body #secCurriculumVitae .cvPlacement a {
   text-align: center;
 }
 body #secProjetDeFormation {
-  background: #717170;
-  text-align: center;
+  background: white;
   width: 100vw;
   height: 100vh;
 }
 body #secProjetDeFormation #titlePageProjet {
-  text-align: center;
+  position: relative;
+  top: 2rem;
+  margin-bottom: 1em;
+  color: var(--color1);
+  text-indent: 20rem;
+  font-size: 2px;
+  font-size: 2rem;
 }
 body #secProjetDeFormation .contProjet {
-  width: 100vw;
-  height: 100vh;
-  padding-left: 15rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  float: right;
+  height: 50vh;
 }
-body #secProjetDeFormation .contProjet .DivItem .item {
-  margin: 10rem;
-  width: 10rem;
-  height: 20rem;
-  background: #fff;
+body #secProjetDeFormation .contProjet .divItem {
+  align-items: center;
+  float: left;
+}
+body #secProjetDeFormation .contProjet .divItem .item {
+  text-align: center;
+  display: flex;
+  height: 90h;
+  width: 10vw;
 }
 body #secContact {
-  background: #0c7c7c;
-  text-align: center;
+  background: #4e4e4e;
   width: 100vw;
   height: 100vh;
-}
-body #secContact h2 {
-  color: red;
-}
-body #secContact .contactCordo {
   text-align: center;
 }
-
 footer {
   text-align: center;
   background-color: var(--color1);
