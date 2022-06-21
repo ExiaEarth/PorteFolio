@@ -108,7 +108,6 @@ body {
         }
     }       
     #secAccueil{
-
         // largeur
         width: 100vw;
         // hauteur
@@ -146,53 +145,56 @@ body {
                 }
             }
         }
-        // #time{
-        //     position: fixed;
-        //     color:var(--color2);
-        //     // text-indent: 20rem;
-        //     font-size: 2px; font-size: 2rem;
-        //     float: right;
+         #time{
+            border: 1px solid red;
+            right: 20rem;
+            background: var(--color1);
+             color:var(--color2);
+             // text-indent: 20rem;
+            font-size: 2px; font-size: 2rem;
+            float: right;
+            
 
-        //     .cercle{
-        //         position: relative;
-        //         width: 150px;
-        //         height: 150px;
-        //         display: flex;
-        //         justify-content: center;
-        //         align-items: center;
-        //         // placé sur le côté droit ou sur le côté gauche de son conteneur
-        //         float: left;
-        //         // border: 1px solid red;
+            .cercle{
+                position: relative;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // placé sur le côté droit ou sur le côté gauche de son conteneur
+                float: left;
+                // border: 1px solid red;
 
-        //         #heurs{
-        //         color: white;
-        //         svg{
-        //             circle{
-        //                 width: 100%;
-        //                 height: 100%;
-        //                 fill: transparent;
-        //                 stroke: #191919;
-        //                 stroke-width: 4;
-        //                 transform: translate(5px);
-        //                 :nth-child(2){
-        //                     stroke: var(--color5);
-        //                 }
-        //             }
-        //         }
-        //         }
-        //         #minutes{
-        //         color: white;
-        //         }
-        //         #second{ 
-        //         text-align: center;
-        //         }
-        //         #amPm{ 
-        //         color: white;
+                #heurs{
+                color: white;
+                svg{
+                    circle{
+                        width: 100%;
+                        height: 100%;
+                        fill: transparent;
+                        stroke: #191919;
+                        stroke-width: 4;
+                        transform: translate(5px);
+                        :nth-child(2){
+                            stroke: var(--color5);
+                        }
+                    }
+                }
+                }
+                #minutes{
+                color: white;
+                }
+                #second{ 
+                text-align: center;
+                }
+                #amPm{ 
+                color: white;
 
 
-        //         }
-        //     }
-        // }
+                }
+            }
+        }
         h2{
             position: relative;
             // position depuis le bord haut
@@ -271,21 +273,21 @@ body {
     }
     #secCurriculumVitae{
         background: rgba($color: #6c0654, $alpha: 1.0);
-        text-align: center;
+        text-align: right;
         // largeur
         width: 100vw;
         // hauteur
         height: 100vh;
+        text-decoration: none;
         .cvText{
-            text-align: center;
-            .textCV{
-                text-align: center;
-            //  cv
-            }
-        }
-        .cvPlacement{
-            a{
-                text-align: center;
+            display: flex;
+            left: 35rem;
+            top: 3rem;
+            ul{
+                li{
+                    text-align: center;
+
+                }
             }
         }
     }
