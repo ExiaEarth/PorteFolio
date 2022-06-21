@@ -200,6 +200,13 @@ body #secContact {
   height: 100vh;
   text-align: center;
 }
+body #secContact h2 {
+  text-align: center;
+}
+body #secContact .contactCordo fieldset legend {
+  text-align: center;
+}
+
 footer {
   text-align: center;
   background-color: var(--color1);
